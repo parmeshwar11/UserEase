@@ -1,5 +1,5 @@
 <div id="section">
-    <button>+ Add User</button>
+    <button (click)="clickFun()">+ Add User</button>
 </div>
 <div class="cont">
 <table>
@@ -13,8 +13,8 @@
 	</tr>
 	<tr *ngFor="let user of users">
 	<td>{{user.id}}</td>
-	<td>{{user.name}}</td>
-	<td>{{user.Email}}</td>
+	<td>{{user.firstname}}</td>
+	<td>{{user.email}}</td>
     <td>{{user.role}}</td>
 	<td>{{user.status}}</td>
     <td><select name="Action" id="Action" ngModel placeholder="Action">

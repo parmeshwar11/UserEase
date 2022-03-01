@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import{HttpClient} from '@angular/common/http'
 import { UsersDataService } from '../services/users-data.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-add-user-component',
   templateUrl: './add-user-component.component.html',
@@ -21,6 +22,7 @@ export class AddUserComponentComponent implements OnInit {
     
 
   }
+ 
   
 
   ngOnInit(): void {
