@@ -1,0 +1,29 @@
+<div id="section">
+    <button>+ Add User</button>
+</div>
+<div class="cont">
+<table>
+	<tr>
+	<th>ID</th>
+	<th>Name</th>
+	<th>Email</th>
+    <th>Role</th>
+	<th>status</th>
+    <th>Action</th>
+	</tr>
+	<tr *ngFor="let user of users">
+	<td>{{user.id}}</td>
+	<td>{{user.name}}</td>
+	<td>{{user.Email}}</td>
+    <td>{{user.role}}</td>
+	<td>{{user.status}}</td>
+    <td><select name="Action" id="Action" ngModel placeholder="Action">
+        <option value="" disabled selected hidden>Action</option>
+       <option value="hr">Edit</option>
+       <option value="manager">delete</option>
+    
+   </select>
+</td>
+	<tr>
+</table>
+</div>

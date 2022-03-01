@@ -1,0 +1,31 @@
+#section{
+    height: 5vh;
+    width: 90vw;
+    margin-left: 4vw;
+
+}
+
+button{
+    background-color:blue;
+    float: right;
+    color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    height: 5vh;
+    width: 7vw;
+    margin-top: 3vh;
+    border-radius: 1vh;
+    
+}
+.cont{
+    margin-top: 10vh;
+}
+td{
+    padding-left: 10vw;
+    padding-top: 5vh;
+}
+th{
+    padding-left: 10vw;
+   
+}
+ 
