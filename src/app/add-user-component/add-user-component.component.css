@@ -1,14 +1,14 @@
 
 .main{
-    height:75vh;
+    height:80vh;
     width:70vw;
     background-color:rgb(240,240,240);
    display: inline-flexbox;
    margin-left: 15vw;
-   margin-top: 15vh;
+   margin-top: 12vh;
 }
 .container{
-    height:60vh;
+    height:69vh;
     width:60vw;
     background-color: white;
     margin-left: 5vw;
@@ -35,5 +35,8 @@ a{
 }
 select{
     width: 30vw;
-    height: 3vh;
+    height: 5vh;
+}
+.error{
+    color: red;
 }

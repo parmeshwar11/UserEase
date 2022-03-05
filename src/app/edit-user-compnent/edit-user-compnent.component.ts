@@ -4,6 +4,7 @@ import { UsersDataService } from '../services/users-data.service';
 import { ActivatedRoute } from '@angular/router';
 import { AstMemoryEfficientTransformer } from '@angular/compiler';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit-user-compnent',
@@ -52,6 +53,13 @@ export class EditUserCompnentComponent implements OnInit {
         console.warn(this.editUser.value)
         this.userData.UpdateUser(this.router.snapshot.params['id'],this.editUser.value).subscribe((result)=>{
         console.warn(result)
+        if (this.editUser.valid) {
+          alert("record has been updated!!");
+          this.editUser.reset();
+          
+          
+        }
+        
         })
       }
 
