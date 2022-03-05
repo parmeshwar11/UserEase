@@ -6,25 +6,25 @@
             <table>
                 <tr style="margin-left: 52%;">
                     <td> First Name</td>
-                    <td><input type="text" name="firstname" ngModel placeholder="First Name"></td>
+                    <td><input type="text" name="firstname" ngModel placeholder="First Name" required></td>
                 </tr>
                 <tr>
                     <td> last Name</td>
-                    <td><input type="text" name="lastName" ngModel placeholder="last Name"></td>
+                    <td><input type="text" name="lastName" ngModel placeholder="last Name" required></td>
                 </tr>
                 <tr>
                     <td>Email</td>
-                    <td><input type="text" name="email" ngModel placeholder="Email"></td>
+                    <td><input type="text" name="email" ngModel placeholder="Email" required></td>
                 </tr>
 
                 <tr>
                     <td>Phone</td>
-                    <td><input type="text" name="phone" ngModel placeholder="Phone"></td>
+                    <td><input type="text" name="phone" ngModel placeholder="Phone" required></td>
                 </tr>
 
                 <tr>
                     <td>Role</td>
-                    <td> <select name="role" id="role" ngModel placeholder="select role">
+                    <td> <select name="role" id="role" ngModel placeholder="select role" required>
                              <option value="" disabled selected hidden>Select role</option>
                             <option value="hr">hr</option>
                             <option value="manager">manager</option>
@@ -36,7 +36,7 @@
 
                 <tr>
                     <td>Status</td>
-                    <td> <select name="status" id="staus" ngModel placeholder="select status">
+                    <td> <select name="status" id="staus" ngModel placeholder="select status" required>
                         <option value="" disabled selected hidden>Select staus</option>
                        <option value="active">active</option>
                        <option value="inactive">inactive</option>
@@ -45,12 +45,12 @@
 
                 <tr>
                     <td>Password</td>
-                    <td><input type="text" name="password" ngModel placeholder="Password"></td>
+                    <td><input type="text" name="password" ngModel placeholder="Password" required></td>
                 </tr>
 
                 <tr>
                     <td>Confirm Password</td>
-                    <td><input type="text" name="cnfpPass" ngModel placeholder=" confirm Password"></td>
+                    <td><input type="text" name="cnfpPass" ngModel placeholder=" confirm Password" required></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button type="submit" id="saveButton">Save</button></td>

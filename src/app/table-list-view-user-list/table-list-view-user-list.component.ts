@@ -28,6 +28,7 @@ export class TableListViewUserListComponent implements OnInit {
     "success":this.status,
     "fail":!this.status
   }
+  collection:any=[];
 
   users:any;
   constructor(private UsersData:UsersDataService,public router:Router){
@@ -44,8 +45,12 @@ export class TableListViewUserListComponent implements OnInit {
     
     this.router.navigate(['add-user-component']);
   }
-
-
+  deleteUser(id:any){
+    this.users.splice(id-1,1)
+    this.UsersData.DeleteUser(id).subscribe((result)=>{
+      console.warn("result",result)
+    })
+  }
 
   ngOnInit(): void {
   }
