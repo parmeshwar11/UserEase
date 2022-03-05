@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UsersDataService } from '../services/users-data.service';
+
 @Component({
   selector: 'app-table-list-view-user-list',
   templateUrl: './table-list-view-user-list.component.html',
@@ -40,11 +41,15 @@ export class TableListViewUserListComponent implements OnInit {
   }
 
   clickFun(){
+    
     this.router.navigate(['add-user-component']);
   }
+
+
+
   ngOnInit(): void {
   }
-
+ 
 }
 
   

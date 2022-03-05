@@ -5,7 +5,7 @@
 
 }
 
-button{
+.addUser{
     background-color:blue;
     float: right;
     color: antiquewhite;
@@ -28,4 +28,6 @@ th{
     padding-left: 10vw;
    
 }
- 
+#edit{
+    margin-right: 1vw;
+}
