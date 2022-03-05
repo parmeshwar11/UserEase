@@ -1,5 +1,8 @@
+
+
+
 <div id="section">
-    <button (click)="clickFun()">+ Add User</button>
+    <button (click)="clickFun()" class="addUser">+ Add User</button>
 </div>
 <div class="cont">
 <table>
@@ -17,13 +20,10 @@
 	<td>{{user.email}}</td>
     <td>{{user.role}}</td>
 	<td>{{user.status}}</td>
-    <td><select name="Action" id="Action" ngModel placeholder="Action">
-        <option value="" disabled selected hidden>Action</option>
-       <option value="hr">Edit</option>
-       <option value="manager">delete</option>
-    
-   </select>
+    <td> <a routerLink="/edit-user-compnent/{{user.id}}"><button id="edit">edit</button></a>
+		<button id="delete">Delete</button>
 </td>
 	<tr>
 </table>
 </div>
+<a routerLink="/edit-user-compnent">Home</a>

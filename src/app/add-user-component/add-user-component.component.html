@@ -1,6 +1,6 @@
 
 <div class="main">
-<span class="header">User<a>Add User</a><a>Users</a></span>
+<span class="header">User<a>Add User</a><a routerLink="user-list">Users</a></span>
     <div class="container"> 
         <form #userData="ngForm"(ngSubmit)="ngsubmit(userData.value)">
             <table>
@@ -59,3 +59,5 @@
         </form>   
     </div>
 </div>
+
+<router-outlet></router-outlet>

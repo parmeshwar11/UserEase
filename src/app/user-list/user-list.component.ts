@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UsersDataService } from '../services/users-data.service';
 @Component({
   selector: 'app-user-list',
@@ -37,7 +38,9 @@ export class UserListComponent implements OnInit {
   
 
   }
+  
 
+  
   ngOnInit(): void {
   }
 
