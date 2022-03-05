@@ -52,6 +52,7 @@ img{
     display: flex;
     margin-left: 7vw;
     margin-top: 10vh;
+    flex-wrap: wrap;
     
 }
 #btn1{
