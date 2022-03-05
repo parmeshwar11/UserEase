@@ -21,9 +21,9 @@
     <td>{{user.role}}</td>
 	<td>{{user.status}}</td>
     <td> <a routerLink="/edit-user-compnent/{{user.id}}"><button id="edit">edit</button></a>
-		<button id="delete">Delete</button>
+		<button id="delete" (click)="deleteUser(user.id)">Delete</button>
 </td>
 	<tr>
 </table>
 </div>
-<a routerLink="/edit-user-compnent">Home</a>
+

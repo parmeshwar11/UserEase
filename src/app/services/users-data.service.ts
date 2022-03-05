@@ -22,6 +22,10 @@ export class UsersDataService {
     return this.http.put(`${this.url}/${id}`,data);
   }
   
+  DeleteUser(id:any){
+    return this.http.delete(`${this.url}/${id}`);
+  }
+  
   
 
 }
