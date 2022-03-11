@@ -8,6 +8,11 @@ import { UsersDataService } from '../services/users-data.service';
 })
 export class UserListComponent implements OnInit {
   
+
+
+  p:number=1;
+  totalLength:any;
+
   public status=true;
 
   status2(){
@@ -28,14 +33,18 @@ export class UserListComponent implements OnInit {
     "fail":!this.status
   }
 
+   collection:any=[];
+
   users:any;
-  constructor(private UsersData:UsersDataService){
+  constructor(private UsersData:UsersDataService,public router:Router){
     UsersData.users().subscribe((data:any)=>{
       console.warn("data",data);
-
-       this.users=data;
+      this.collection=data;
+      this.totalLength=data.length;
+      
     });
   
+
 
   }
   

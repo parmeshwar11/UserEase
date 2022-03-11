@@ -44,3 +44,34 @@ th{
     width:5vw;
     margin-right: 0.5vw;
 }
+.paginate{
+    margin-top: 12vh;
+    float: right;
+    
+}.utility{
+    margin-bottom: 4vh;
+}
+.sort{
+    margin-top: 1vh;
+    margin-left: 3vw;
+    margin-bottom: 5vh;
+    width:7vw;
+    height:2.5vw; 
+    background-color:rgb(240, 240, 240);
+    color:black;
+    border-radius: 1vh;
+}
+
+/* 
+#filter{
+    width:7vw;
+    height:2.5vw; 
+    background-color:rgb(240, 240, 240);
+    color:black;
+    border-radius: 1vh;
+    margin-left: 3vw; 
+} */
+
+.col{
+    margin-left: 5vw;
+}

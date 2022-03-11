@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { UsersDataService } from '../services/users-data.service';
+declare var jQuery: any;
 
 @Component({
   selector: 'app-table-list-view-user-list',
@@ -8,7 +10,9 @@ import { UsersDataService } from '../services/users-data.service';
   styleUrls: ['./table-list-view-user-list.component.css']
 })
 export class TableListViewUserListComponent implements OnInit {
-
+public whichsort="";
+  p:number=1;
+  totalLength:any;
   public status=true;
 
   status2(){
@@ -34,8 +38,9 @@ export class TableListViewUserListComponent implements OnInit {
   constructor(private UsersData:UsersDataService,public router:Router){
     UsersData.users().subscribe((data:any)=>{
       console.warn("data",data);
-
-       this.users=data;
+      this.collection=data;
+      this.totalLength=data.length;
+      
     });
   
 
@@ -52,7 +57,20 @@ export class TableListViewUserListComponent implements OnInit {
     })
   }
 
+  AtoZSort(){
+    this.whichsort="asc";
+  console.log(this.whichsort);
+    
+  }
+
+  ZtoASort(){
+    this.whichsort="desc";
+  console.log(this.whichsort);
+  }
+
   ngOnInit(): void {
+
+    
   }
  
 }
