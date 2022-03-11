@@ -2,9 +2,24 @@
 
 
 <div id="section">
-    <button (click)="clickFun()" class="addUser">+ Add User</button>
+
+
+    <button type="button" class="addUser">+ Add User</button>
+
+	
 </div>
 <div class="cont">
+	
+	<div class="col">
+		<div ngbDropdown class="d-inline-block">
+		  <button  class="sort" id="dropdownBasic1" ngbDropdownToggle>Sort</button>
+		  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+			<button ngbDropdownItem  (click)="AtoZSort()">A to Z</button>
+			<button ngbDropdownItem (click)="  ZtoASort()">Z to A</button>
+		  </div>
+		</div>
+	  </div>
+	
 <table>
 	<tr>
 	<th>ID</th>
@@ -14,7 +29,11 @@
 	<th>status</th>
     <th>Action</th>
 	</tr>
-	<tr *ngFor="let user of users">
+	<tr *ngFor="let user of collection | paginate: { itemsPerPage: 5, currentPage: p,
+	
+		totalItems:totalLength 
+	
+	} |sortBy:'asc'">
 	<td>{{user.id}}</td>
 	<td>{{user.firstname}}</td>
 	<td>{{user.email}}</td>
@@ -27,3 +46,11 @@
 </table>
 </div>
 
+<div class="paginate">
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+
+<script>
+	
+
+</script>
