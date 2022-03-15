@@ -19,6 +19,9 @@ import { TableListViewUserListComponent } from './table-list-view-user-list/tabl
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SortnamePipe } from './sortname.pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FilterPipe } from './filter.pipe';
+import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     UserListComponent,
     TableListViewUserListComponent,
     PageNotFoundComponent,
-    SortnamePipe
+    SortnamePipe,
+    FilterPipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     NgxPaginationModule,
     NgpSortModule,
-    NgbModule 
+    NgbModule,
+    BrowserAnimationsModule 
   ],
   providers: [UsersDataService],
   bootstrap: [AppComponent]
