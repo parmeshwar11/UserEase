@@ -1,24 +1,37 @@
 
 
+<div class="main">
+	<div id="section">
 
-<div id="section">
+    <button type="button" class="btn btn-primary" id="addUser">+ Add User</button>
 
 
-    <button type="button" class="addUser">+ Add User</button>
-
-	
 </div>
 <div class="cont">
 	
-	<div class="col">
+	<div class="utility">
 		<div ngbDropdown class="d-inline-block">
-		  <button  class="sort" id="dropdownBasic1" ngbDropdownToggle>Sort</button>
+		  <button  class="sort" id="dropdownBasic1" ngbDropdownToggle>Sort By</button>
 		  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-			<button ngbDropdownItem  (click)="AtoZSort()">A to Z</button>
-			<button ngbDropdownItem (click)="  ZtoASort()">Z to A</button>
+			<button ngbDropdownItem  [ngModel]="whichsort" (click)="AtoZSort()" name="btn" ngDefaultControl>A to Z</button>
+			<button ngbDropdownItem  [ngModel]="whichsort" (click)="ZtoASort()" ngDefaultControl>Z to A</button>
 		  </div>
 		</div>
-	  </div>
+
+		<div ngbDropdown class="d-inline-block">
+			<button  class="filter" id="dropdownBasic1" ngbDropdownToggle>Filter By</button>
+			<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+			  <button ngbDropdownItem   name="user"[ngModel]="filterdata" (click)="userFilter()" ngDefaultControl>User</button>
+			  <button ngbDropdownItem  name="admin" [ngModel]="filterdata" (click)="adminFilter()"ngDefaultControl >Admin</button>
+			</div>
+		  </div>
+  
+		<div class="input-group" id="searchbox">
+			<div class="form-outline">
+			  <input id="search-input" name="search" type="search" id="form1" class="form-control" [(ngModel)]="rolesearch" placeholder="search role"/> 
+			</div>
+		  </div>
+	</div>
 	
 <table>
 	<tr>
@@ -33,7 +46,7 @@
 	
 		totalItems:totalLength 
 	
-	} |sortBy:'asc'">
+	} |sortBy:whichsort:'firstname' |filter:rolesearch |filter:filterdata">
 	<td>{{user.id}}</td>
 	<td>{{user.firstname}}</td>
 	<td>{{user.email}}</td>
@@ -41,6 +54,7 @@
 	<td>{{user.status}}</td>
     <td> <a routerLink="/edit-user-compnent/{{user.id}}"><button id="edit">edit</button></a>
 		<button id="delete" (click)="deleteUser(user.id)">Delete</button>
+		
 </td>
 	<tr>
 </table>
@@ -49,8 +63,4 @@
 <div class="paginate">
 <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>
-
-<script>
-	
-
-</script>
+</div>

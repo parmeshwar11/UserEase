@@ -11,6 +11,7 @@ declare var jQuery: any;
 })
 export class TableListViewUserListComponent implements OnInit {
 public whichsort="";
+public filterdata="";
   p:number=1;
   totalLength:any;
   public status=true;
@@ -60,6 +61,7 @@ public whichsort="";
   AtoZSort(){
     this.whichsort="asc";
   console.log(this.whichsort);
+  
     
   }
 
@@ -68,11 +70,22 @@ public whichsort="";
   console.log(this.whichsort);
   }
 
+
+  rolesearch:string='';
+  userFilter(){
+    this.filterdata='user';
+    console.log(this.filterdata)
+  }
+  adminFilter(){
+    console.log('admin')
+
+    this.filterdata='admin'
+  }
   ngOnInit(): void {
 
     
   }
- 
+
 }
 
   
