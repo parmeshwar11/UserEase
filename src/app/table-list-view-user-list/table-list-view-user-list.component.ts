@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 import { UsersDataService } from '../services/users-data.service';
-declare var jQuery: any;
+
 
 @Component({
   selector: 'app-table-list-view-user-list',

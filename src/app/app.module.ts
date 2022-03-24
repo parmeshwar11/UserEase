@@ -23,6 +23,9 @@ import { FilterPipe } from './filter.pipe';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { UserSignupComponent } from './user-signup/user-signup.component';
+import { UserSignInComponent } from './user-sign-in/user-sign-in.component';
+import { ForgotPasswordUserComponent } from './forgot-password-user/forgot-password-user.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +38,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SortnamePipe,
     FilterPipe,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    UserSignupComponent,
+    UserSignInComponent,
+    ForgotPasswordUserComponent
   ],
   imports: [
     BrowserModule,
