@@ -26,6 +26,18 @@ export class UsersDataService {
     return this.http.delete(`${this.url}/${id}`);
   }
   
-  
+  registerUser(data:any){
+    return this.http.post('http://localhost:3000/registerdUser',data);
+  }
+  getUsers(){
+    return this.http.get('http://localhost:3000/registerdUser');
+  }
 
+  forgetPassword(data:any){
+    return this.http.post('https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=[API_KEY]',{
+      requestType:'PASSWORD_RESET',
+      email:'data.email'
+    })
+    
+  }
 }
