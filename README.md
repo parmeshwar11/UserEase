@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+For running  this project follows belows steps
+
+1.Use noe 12 version 
+2. install json server on machine 
+    npm install -g json-server
+3.start mock db 
+        json-server --watch db.json --port 3000
+Note: The db is in project location .
+
+4.npm  install 
+
+5 ng serve
+

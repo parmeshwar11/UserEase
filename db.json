@@ -1,19 +1,102 @@
 {
-  "posts": [
+  "userInfo": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "firstname": "ganesh",
+      "lastName": null,
+      "email": "mailto:ganesh@gmail.com",
+      "phone": "9604603773",
+      "role": "hr",
+      "status": "inactive",
+      "password": "abcd@jklmn",
+      "cnfpPass": "",
+      "id": 1
+    },
+    {
+      "firstname": "parmeshwar",
+      "lastName": "chavan",
+      "email": "mailto:parmeshwarc505@gmail.com",
+      "phone": "9604603773",
+      "role": "manager",
+      "status": "active",
+      "password": "1245",
+      "cnfpPass": "1245",
+      "id": 2
+    },
+    {
+      "firstname": "nirajan",
+      "lastName": "yedke",
+      "email": "nirajan@yedke",
+      "phone": "",
+      "role": "",
+      "status": "",
+      "password": "",
+      "cnfpPass": "",
+      "id": 3
+    },
+    {
+      "firstname": "nirajan",
+      "lastName": "yedke",
+      "email": "nirajan@yedke",
+      "phone": "",
+      "role": "",
+      "status": "",
+      "password": "",
+      "cnfpPass": "",
+      "id": 4
+    },
+    {
+      "firstname": "nirajan",
+      "lastName": "yedke",
+      "email": "nirajan@yedke",
+      "phone": "",
+      "role": "",
+      "status": "",
+      "password": "",
+      "cnfpPass": "",
+      "id": 5
+    },
+    {
+      "firstname": "w",
+      "lastName": "Gorde",
+      "email": "mailto:djain@elimu.io",
+      "phone": "asdsa",
+      "role": "manager",
+      "status": "active",
+      "password": "sda",
+      "cnfpPass": "sd",
+      "id": 6
+    },
+    {
+      "firstname": "amruta",
+      "lastName": "savai",
+      "email": "mailto:djain@elimu.io",
+      "phone": "asdsa",
+      "role": "manager",
+      "status": "active",
+      "password": "amruta",
+      "cnfpPass": "amruta",
+      "id": 7
     }
   ],
-  "comments": [
+  "registerdUser": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "firstname": "ganesh",
+      "lastName": null,
+      "email": "mailto:ganesh@gmail.com",
+      "phone": "9604603773",
+      "role": "hr",
+      "status": "inactive",
+      "password": "abcd@jklmn",
+      "cnfpPass": "",
+      "id": 1
+    },
+    {
+      "firstname": "amruta",
+      "lastname": "sawai",
+      "email": "amruta@gmail",
+      "password": "amruta",
+      "cnfPass": "amruta",
+      "id": 2
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
